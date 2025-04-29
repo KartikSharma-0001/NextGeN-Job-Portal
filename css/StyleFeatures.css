@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.headline{
+    margin-top:20px;
+    padding-left: 8px;
+    font-size: xx-large;
+    /* color: rgba(90, 65, 149, 0.988); */
+    font-weight: 20px;
+}
+
+.brief-description{
+    padding-left: 10px ;
+    padding-top: 17px;
+    font-size: large;
+}
+.FeaturesImage{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+.bullet-points{
+    padding-right: 110px;
+    /* position: fixed; */
+    top:19%;
+    /* right:0; */
+    /* display: flex;
+    flex-direction: row; */
+    
+}

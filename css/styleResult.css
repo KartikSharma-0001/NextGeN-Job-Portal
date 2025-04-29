@@ -1,0 +1,16 @@
+*{
+    text-decoration: none;
+   margin: 0px;
+   padding: 0px; 
+   text-align: center;
+}
+
+.result-container{
+padding-top: 55px;
+
+}
+.result-heading{
+ font-size:xx-large ;
+ margin-bottom: 20px;
+ 
+}

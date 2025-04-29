@@ -1,0 +1,219 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box;
+    font-family: Arial, sans-serif; */
+}
+
+
+.logo-design{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+    background-color:#ddd;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding-left: 3px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    display: inline-block;
+
+}
+.landing-page{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.welcome-h1{
+    margin-top: 2%;
+}
+.welcome-para{
+padding:3px;
+}
+
+body{
+    background-color:white
+     ;
+}
+.navbar{
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+.logo a{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#searchBar{
+    width: 300px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    margin-top: 9px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 250px;
+    border-style: groove;
+}
+
+
+li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+li a{
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 25px;
+
+}
+
+button{
+    margin-left: 10px; 
+    padding: 8px;
+    background-color: #1c78f1;
+    border-radius: 800px;
+    width: 100px;
+    
+}
+ 
+button a{
+    color: white;
+    font-weight:bold;
+    font-size: 15px;
+}
+button:hover {
+    background-color: rgb(3, 75, 190)  /* color while hovering on nav login button*/
+}
+
+
+.dropdown{
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.search-container{
+    background-color:#ddd;
+    /* background-color: #1c78f145; */
+    border-radius: 25px;
+    border: 3px solid gray;
+    padding: 4px;
+    margin-top: 30PX;
+    margin-left: 350px;
+    margin-right: 350px;
+    display: flex;
+    justify-content:space-evenly ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.keyword-input{
+
+    padding: 5px;
+    border: 1px  #657175 ; 
+    border-radius: 5px;
+    margin-bottom: 2px;
+    margin-left: 21px;
+
+}
+
+.category-select{
+    padding: 5px;
+    border:   #657175 ; 
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.location-select{
+    padding: 5px;
+    border:  #657175 ; 
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+
+/* Explore By Category*/
+
+
+.exploreby-container {
+    text-align: center;
+    background-color: #efeeee;
+}
+
+.exploreby-heading{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: x-large;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.icon {
+    font-size: 40px;
+    color: green;
+    display: flex;
+}
+.category {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px;
+    display: flex;
+}
+.vacancy {
+    color: green;
+    font-size: 14px;
+    display: flex;
+}

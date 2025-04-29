@@ -1,0 +1,204 @@
+    :root {
+      --bg-color: #f0f2f5;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --primary: #4f46e5;
+      --secondary: #10b981;
+    }
+
+    .dark-mode {
+      --bg-color: #1f2937;
+      --text-color: #f9fafb;
+      --card-bg: #374151;
+      --primary: #6366f1;
+      --secondary: #22c55e;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      position: relative;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    /* Dark Mode Toggle Button */
+    .darkmode-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 1001;
+      transition: background 0.3s;
+    }
+    .darkmode-btn:hover {
+      background: #4338ca;
+    }
+
+    /* Chatbot Button */
+    .chatbot-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .chatbot-btn:hover {
+      background: #4338ca;
+    }
+
+    /* Chatbot Window */
+    .chatbot-window {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      transform: translateY(500px);
+      opacity: 0;
+      transition: transform 0.4s ease, opacity 0.4s ease, background 0.4s;
+      overflow: hidden;
+      z-index: 1000;
+    }
+    .chatbot-window.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .chatbot-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 15px;
+      font-size: 18px;
+    }
+    .chatbot-body {
+      padding: 15px;
+      flex: 1;
+      overflow-y: auto;
+      background: var(--bg-color);
+    }
+    .chatbot-footer {
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      display: flex;
+      background: var(--card-bg);
+    }
+    .chatbot-footer input {
+      flex: 1;
+      padding: 8px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      outline: none;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+    .chatbot-footer button {
+      background: var(--primary);
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      margin-left: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    /* Pop Form Button */
+    .form-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: var(--secondary);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .form-btn:hover {
+      background: #059669;
+    }
+
+    /* Form Modal */
+    .form-modal {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+      z-index: 999;
+    }
+    .form-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .form-content {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      animation: popIn 0.4s ease;
+      color: var(--text-color);
+    }
+    @keyframes popIn {
+      from { transform: scale(0.8); }
+      to { transform: scale(1); }
+    }
+    .form-content h2 {
+      margin-bottom: 20px;
+    }
+    .form-content input, .form-content button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+    .form-content button {
+      background: var(--secondary);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .form-content button:hover {
+      background: #059669;
+    }

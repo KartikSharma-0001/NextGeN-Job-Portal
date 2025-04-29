@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/logged-in" method="POST">
+            <div class="i1">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="i1">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <div class="i1">
+                <label for="userType" class="form-label">User Type</label>
+                <select id="userType" name="userType" required>
+                    <option value="Employer">Employer</option>
+                    <option value="JobSeeker">JobSeeker</option>
+                    <option value="Administrator">Administrator</option>
+                </select>
+            </div>
+            <br> 
+            <div class="i1 text-light">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <br/>
+            <button type="submit" class="btn btn-login">Login</button>
+            <p class="text-center text-light i1-3">
+                Don't have an account? 
+                <a href="/register">Register</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
